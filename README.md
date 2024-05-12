@@ -114,7 +114,7 @@ php artisan test
 {
     "title": "Заголовок",
     "content": "Контент",
-    "user_id": ID пользователя,
+    "user_id": "ID пользователя",
     "created_at": "Дата создания",
     "updated_at": "Дата редактирования"
     "id": 10
@@ -128,10 +128,10 @@ php artisan test
 <br>**Response:**
 ```json 
 {
-    "id": ID Заметки,
+    "id": "ID Заметки",
     "title": "Заголовок",
     "content": "Контент",
-    "user_id": ID пользователя,
+    "user_id": "ID пользователя",
     "created_at": "Дата создания",
     "updated_at": "Дата редактирования"
     "id": 10
@@ -145,10 +145,10 @@ php artisan test
 <br>**Response:**
 ```json 
 {
-    "id": ID Заметки,
+    "id": "ID Заметки",
     "title": "Заголовок",
     "content": "Контент",
-    "user_id": ID пользователя,
+    "user_id": "ID пользователя",
     "created_at": "Дата создания",
     "updated_at": "Дата редактирования"
     "id": 10
@@ -171,7 +171,7 @@ php artisan test
 {
     "title": "Заголовок",
     "content": "Контент",
-    "user_id": ID пользователя,
+    "user_id": "ID пользователя",
     "created_at": "Дата создания",
     "updated_at": "Дата редактирования"
     "id": 10
