@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+    business-test-nginx:
+        container_name: business-test-nginx
+        build: ./docker/nginx
+        volumes:
+            - .:/var/www/html
+        ports:
+            - 8000:80
+
+    business-test-php:
+        container_name: business-test-php
+        build: ./docker/php
+        ports:
+            - 9000:9000
+        volumes:
+            - .:/var/www/html
+            - ./docker/php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+
+    business-test-mysql:
+        container_name: business-test-mysql
+        build: docker/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: business-test
+        volumes:
+            - ./docker/mysql/data:/var/lib/mysql
+        ports:
+            - 3306:3306
